@@ -1,7 +1,7 @@
 import Groq from 'groq-sdk'
 
 const groq = new Groq({
-  apiKey: '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'
+  apiKey: process.env.GROQ_API_KEY,
 });
 
 export default defineEventHandler(async (event) => {
